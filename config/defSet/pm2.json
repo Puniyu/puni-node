@@ -12,8 +12,8 @@
       "max_memory_restart": "1G",
       "restart_delay": 2000,
       "merge_logs": true,
-      "error_file": "./@puni/logs/pm2_error.log",
-      "out_file": "./@puni/logs/pm2_out.log"
+      "error_file": "./@puniyu/logs/pm2_error.log",
+      "out_file": "./@puniyu/logs/pm2_out.log"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "name": "@puniyu/puni",
+  "version": "1.0.0",
+  "description": "一个高效·稳定·可高度灵活扩展 的机器人框架",
+  "keywords": [
+    "node",
+    "nodejs",
+    "bot",
+    "puni"
+  ],
+  "bugs": {
+    "url": "https://github.com/Puniyu/puni-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puniyu/puni-node/Puni.git"
+  },
+  "license": "GNU AGPL-3.0",
+  "author": "PuniCore",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --noEmit && tsdown",
+    "dev": "cross-env ENV_FILE=\".env.development\" node --import tsx src/index.ts",
+    "dev:bun": "cross-env ENV_FILE=\".env.development\" bun --conditions=development src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "sort": "sort-package-json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@candriajs/exec": "^1.0.7",
+    "@punicore/logger": "^1.2.4",
+    "axios": "npm:@candriajs/axios@^1.1.2",
+    "chokidar": "^4.0.3",
+    "dayjs": "^1.11.13",
+    "dotenv": "npm:@candriajs/dotenv@^1.2.2",
+    "node-schedule": "npm:@karinjs/node-schedule@^1.0.1",
+    "radashi": "^12.6.0",
+    "redis": "npm:ioredis@^5.6.1",
+    "semver": "^7.7.2",
+    "sequelize": "^6.37.7",
+    "simple-git": "npm:@candriajs/simple-git@^1.1.2",
+    "sqlite3": "npm:@candriajs/sqlite3@1.1.5",
+    "yaml": "^2.8.0"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

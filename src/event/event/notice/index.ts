@@ -1,5 +1,0 @@
-export * from '@puni/event/event/notice/base'
-export * from '@puni/event/event/notice/friend'
-export * from '@puni/event/event/notice/group'
-export * from '@puni/event/event/notice/other'
-export * from '@puni/event/event/notice/private'
